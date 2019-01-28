@@ -8,6 +8,9 @@ A guy walks into a 7-11 store and selects four items to buy. The clerk at the co
 
 What are the exact costs of each item?
 
+## SecondDegreeParabola
+
+Solutionning the Quadratic Equation in a computational way ! It could be intyeresting to eventualy push this project witch a GUI to make it more easier to understand for kids they want to learn !  
 
 ## Copyright
 ***
