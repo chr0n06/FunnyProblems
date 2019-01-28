@@ -6,7 +6,7 @@
 package seconddegreeparabola;
 
 import BLL.Service;
-import Model.Values;
+import Model.Value;
 
 /**
  *
@@ -19,7 +19,23 @@ public class SecondDegreeParabola {
      */
     public static void main(String[] args) {
         Service service = new Service();
-        Values values = new Values(-2, 4, 1);
-        service.discriminant(values);
+
+        /**
+         * From Equation : y = -2x^2+4x+1 Extract a, b, c values to => a = -2 b
+         * = 4 c = 1 and put them inside the solutionner below,
+         *
+         * @param Value
+         */
+        Value value = new Value(-2, 4, 1);
+        service.solution(value);
+
+        /**
+         * If you need only one coordinate from an X value just enter the value
+         * and the X value you want.
+         *
+         * @param Value
+         * @param double
+         */
+        service.showingNorthingFromX(value, 2.224);
     }
 }
