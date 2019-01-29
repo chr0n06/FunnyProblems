@@ -26,7 +26,7 @@ public class SecondDegreeParabola {
          *
          * @param Value
          */
-        Value value = new Value(-2, 4, 1);
+        Value value = new Value(3, 4, 0);
         service.solution(value);
 
         /**
@@ -36,6 +36,6 @@ public class SecondDegreeParabola {
          * @param Value
          * @param double
          */
-        service.showingNorthingFromX(value, 2.224);
+        service.showingNorthingFromX(value, 2.0);
     }
 }

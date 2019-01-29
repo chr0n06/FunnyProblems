@@ -26,9 +26,11 @@ public class Service {
 
         if (discriminant < 0) {
             System.out.println("Parabola never touch the 'x' axis cause discriminant " + discriminant + " is lower then zero !");
+            drawingParabola(value, rangeDrawingParabola);
         } else if (discriminant == 0) {
             System.out.println("Parabola touch the 'x' axis only once cause discriminant " + discriminant + " is equal to zero !");
             findingSummit(value);
+            drawingParabola(value, rangeDrawingParabola);
         } else if (discriminant > 0) {
             System.out.println("Parabola touch the 'x' axis twice time cause discriminant " + discriminant + " is greater then zero !");
             findingXsWhenYEqualZero(value);
@@ -70,15 +72,16 @@ public class Service {
     }//findingSummit
 
     public void drawingParabola(Value value, int range) {
-        for (int i = Math.negateExact(range); i < 0; i++) {
-            System.out.println("(x,y) = (" + i + ", " + ((value.getA() * Math.pow(i, 2)) + (value.getB() * i) + value.getC()) + ")");
-        }
-        for (int i = 0; i < range; i++) {
+        for (int i = Math.negateExact(range); i < range; i++) {
             System.out.println("(x,y) = (" + i + ", " + ((value.getA() * Math.pow(i, 2)) + (value.getB() * i) + value.getC()) + ")");
         }
     }
 
     public void showingNorthingFromX(Value value, Double x) {
         System.out.println("(x,y) = (" + x + ", " + ((value.getA() * Math.pow(x, 2)) + (value.getB() * x) + value.getC()) + ")");
+    }
+    
+    public void showingEasthingFromY(Value value, Double y) {
+        System.out.println("(x,y) = (" + y + ", " + ((value.getA() * Math.pow(y, 2)) + (value.getB() * y) + value.getC()) + ")");
     }
 }//Service
