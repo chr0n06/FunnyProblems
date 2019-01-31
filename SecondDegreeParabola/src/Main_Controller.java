@@ -49,7 +49,7 @@ public class Main_Controller {
             );
             Map<Integer, Double> coordinateTab = new TreeMap<Integer, Double>();
 
-            coordinateTab = service.drawingParabola(value, 50);
+            coordinateTab = service.drawingParabola(value, 10);
 
             XYChart.Series series1 = new XYChart.Series();
             series1.setName("Parabola #" + parabolaCounter++);
