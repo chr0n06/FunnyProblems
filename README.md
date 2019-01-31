@@ -10,7 +10,13 @@ What are the exact costs of each item?
 
 ## SecondDegreeParabola
 
-Solutionning the Quadratic Equation in a computational way ! It could be interesting to eventualy push this project with a GUI to make it more easier to understand for kids they want to learn !  
+Solutionning the Quadratic Equation in a computational way !
+Actually working on a GUI interface to make it more easier to understand for people who want to learn about this aspect of Mathematics!  
+
+### Interface
+
+![picture](SecondDegreeParabola\src\Assets\Gui_v1.png)
+
 
 ## Copyright
 ***
