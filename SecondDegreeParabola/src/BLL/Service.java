@@ -80,8 +80,9 @@ public class Service {
     public void showingNorthingFromX(Value value, Double x) {
         System.out.println("(x,y) = (" + x + ", " + ((value.getA() * Math.pow(x, 2)) + (value.getB() * x) + value.getC()) + ")");
     }
-    
+    /*
     public void showingEasthingFromY(Value value, Double y) {
         System.out.println("(x,y) = (" + y + ", " + ((value.getA() * Math.pow(y, 2)) + (value.getB() * y) + value.getC()) + ")");
     }
+*/
 }//Service
