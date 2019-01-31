@@ -7,7 +7,9 @@ package BLL;
 
 import Model.Value;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -71,10 +73,15 @@ public class Service {
         System.out.println("Summit coordinate = (" + x0 + ", " + y0 + ")");
     }//findingSummit
 
-    public void drawingParabola(Value value, int range) {
+    public Map<Integer, Double> drawingParabola(Value value, int range) {
+        Map<Integer, Double> coordinateTab = new HashMap<Integer, Double>();
+        
         for (int i = Math.negateExact(range); i < range; i++) {
+            coordinateTab.put(i, ((value.getA() * Math.pow(i, 2)) + (value.getB() * i) + value.getC()));
             System.out.println("(x,y) = (" + i + ", " + ((value.getA() * Math.pow(i, 2)) + (value.getB() * i) + value.getC()) + ")");
         }
+        
+        return coordinateTab;
     }
 
     public void showingNorthingFromX(Value value, Double x) {
