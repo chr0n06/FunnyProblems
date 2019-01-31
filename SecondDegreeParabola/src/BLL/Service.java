@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  *
@@ -74,7 +75,7 @@ public class Service {
     }//findingSummit
 
     public Map<Integer, Double> drawingParabola(Value value, int range) {
-        Map<Integer, Double> coordinateTab = new HashMap<Integer, Double>();
+        Map<Integer, Double> coordinateTab = new TreeMap<Integer, Double>();
         
         for (int i = Math.negateExact(range); i < range; i++) {
             coordinateTab.put(i, ((value.getA() * Math.pow(i, 2)) + (value.getB() * i) + value.getC()));

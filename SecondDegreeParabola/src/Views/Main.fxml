@@ -8,17 +8,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main_Controller">
    <children>
       <HBox prefHeight="100.0" prefWidth="594.0" spacing="20.0">
          <children>
-            <TextField fx:id="textField1" />
-            <TextField fx:id="textField2">
+            <TextField fx:id="textField1" prefHeight="26.0" prefWidth="40.0" />
+            <TextField fx:id="textField2" prefHeight="26.0" prefWidth="40.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin></TextField>
-            <TextField fx:id="textField3" />
+            <TextField fx:id="textField3" prefHeight="26.0" prefWidth="40.0" />
+            <Text fx:id="equation" fill="#45db1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
             <Button fx:id="findSolution" mnemonicParsing="false" onAction="#onActionFindSolution" text="Button" />
             </children>
          <padding>
