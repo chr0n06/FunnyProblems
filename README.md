@@ -15,7 +15,7 @@ Actually working on a GUI interface to make it more easier to understand for peo
 
 ### Interface
 
-![picture](SecondDegreeParabola\src\Assets\Guiv1.png)
+![picture](SecondDegreeParabola/src/Assets/Guiv1.png)
 
 
 ## Copyright
